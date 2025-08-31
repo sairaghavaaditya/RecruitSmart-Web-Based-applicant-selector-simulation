@@ -31,24 +31,27 @@ This demonstrated the platform’s potential to **streamline recruitment** and *
 
 ## 📸 Screenshots  
 
+## 📸 Screenshots  
+
 <p align="center">
-  <img src="assets/screenshorts/Home.png" alt="Home" width="45%"/>
-  <img src="assets/screenshorts/users.png" alt="Users" width="45%"/>
+  <img src="assets/screenshots/Home.png" alt="Home" width="45%"/>
+  <img src="assets/screenshots/users.png" alt="Users" width="45%"/>
 </p>
 
 <p align="center">
-  <img src="assets/screenshorts/admindashboard.png" alt="Admin Dashboard" width="45%"/>
-  <img src="assets/screenshorts/expertdashboard.png" alt="Expert Dashboard" width="45%"/>
+  <img src="assets/screenshots/admindashboard.png" alt="Admin Dashboard" width="45%"/>
+  <img src="assets/screenshots/expertdashboard.png" alt="Expert Dashboard" width="45%"/>
 </p>
 
 <p align="center">
-  <img src="assets/screenshorts/userdashboard.png" alt="User Dashboard" width="45%"/>
-  <img src="assets/screenshorts/capatability.png" alt="Capability" width="45%"/>
+  <img src="assets/screenshots/userdashboard.png" alt="User Dashboard" width="45%"/>
+  <img src="assets/screenshots/capatability.png" alt="Capability" width="45%"/>
 </p>
 
 <p align="center">
-  <img src="assets/screenshorts/boardroom.png" alt="Boardroom" width="45%"/>
+  <img src="assets/screenshots/boardroom.png" alt="Boardroom" width="45%"/>
 </p>
+
 
 ## 🎥 Demo  
 
