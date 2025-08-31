@@ -1,0 +1,80 @@
+.expertUploadContainer {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #530c0c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectContainer,
+.fileContainer {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.select,
+.fileInput {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitButton {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FF9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color:#1d3557
+}
+
+.submitButton.loading {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.message {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}
+.divider {
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 80%;
+    margin: 20px 0;
+}

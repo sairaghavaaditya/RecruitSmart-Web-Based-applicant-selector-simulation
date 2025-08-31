@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #a8dadc;  /* #a8dadc  Light blue color */
+    --light-color: #f1faee;
+    --hover-color: #10a1f5;
+    --background-gradient: linear-gradient(135deg, #f6f8fa, #b4d5f6);
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    flex-direction: row; /* Keeps the image and form side by side */
+}
+
+.rightContainer {
+    width: 50%;
+    background-image: url('/public/loginpageImg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.rightContainer:hover {
+    transform: scale(1.05);
+}
+
+.rightContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    transition: background 0.3s ease;
+}
+
+.rightContainer:hover::after {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.rightContainer h2,
+.rightContainer p {
+    z-index: 1;
+    color: var(--light-color);
+    margin: 0;
+}
+
+.leftContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--background-gradient);
+    padding: 40px 20px;
+    height: 100%;
+}
+
+.child {
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color:rgba(113, 164, 200, 0.4); /* Slight background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input {
+    width: 95%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.input:focus,
+.input:hover {
+    outline: none;
+    box-shadow: 0 0 8px var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjusts space between buttons */
+}
+
+.button {
+    width: 45%; /* Adjusted width for better alignment */
+    padding: 12px;
+    font-size: 16px;
+    margin:0px 7px;
+   
+    font-weight: bold;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #19437e;
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.errorMessage {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 780px) {
+    .rightContainer {
+        display: none;
+    }
+
+    .leftContainer {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Adds some padding to make it look better on smaller screens */
+    }
+
+    .child {
+        width: 100%;
+        max-width: 400px; /* More width for better mobile experience */
+        padding: 20px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 15px; /* Stack buttons vertically on smaller screens */
+    }
+
+    .button {
+        width: 100%;
+    }
+}

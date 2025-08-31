@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    background: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #1995ad;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Prerequisite Container */
+  .prerequisiteContainer {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .prerequisiteContainer h1 {
+    color: #1995ad;
+    margin-bottom: 20px;
+  }
+  
+  /* Content Sections */
+  .contentSections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .compatibilitySection,
+  .instructionsSection {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compatibilitySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .webcamVideo {
+    width: 400px;
+    height: 300px;
+    align-self: center;
+    background-color: #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.compatibilityStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Instructions Section */
+.instructionsSection img {
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.instructionsSection ol {
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.goBackBtn,
+.startInterviewBtn {
+  background-color: #1995ad;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.goBackBtn:hover,
+.startInterviewBtn:hover {
+  background-color: #a1d6e2;
+  color: #1995ad;
+}

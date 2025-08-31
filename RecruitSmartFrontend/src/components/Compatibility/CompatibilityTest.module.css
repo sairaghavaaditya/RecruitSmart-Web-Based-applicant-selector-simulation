@@ -1,0 +1,130 @@
+/* General Page Styles */
+body {
+  background-color: #F2F2F2; /* Light Grey */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333; /* Dark Grey */
+}
+
+
+
+/* Container for Fixed Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 40px); /* Full height minus header space */
+}
+
+.leftContainer, .rightContainer {
+  flex: 1;
+  padding: 20px;
+  background-color: #FFFFFF; /* White */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #F2F2F2; /* Light Grey border */
+  overflow-y: auto;
+}
+
+.leftContainer {
+  background-color: #FFFFFF; /* Consistent background */
+}
+
+
+
+/* Test Containers */
+.testContainer {
+  margin-bottom: 20px;
+}
+
+.combutton {
+  background-color: #12adc5; /* Royal Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1d657e; /* Navy Blue on hover */
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recording {
+  font-size: 18px;
+  color: #1E90FF; /* Royal Blue */
+}
+
+.response {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.passed {
+  color: #66BB6A; /* Soft Green */
+  font-weight: bold;
+}
+
+.pending {
+  color: #FF0000; /* Red */
+  font-weight: bold;
+}
+
+/* Right Section Styles */
+.rightContainer {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #F2F2F2; /* Light Grey border */
+}
+
+.instructionImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+ol {
+  padding-left: 20px;
+  color: #333333;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Fixed height adjustment for sections */
+.leftContainer, .rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

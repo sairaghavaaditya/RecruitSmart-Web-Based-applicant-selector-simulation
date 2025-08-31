@@ -1,0 +1,72 @@
+/* OverallPerformance.module.css */
+
+.container {
+    background-color: #F5F5F5;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    color: #1E88E5;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .subHeader {
+    color: #757575;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobTitle {
+    color: #212121;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 5px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table th {
+    background-color: #1E88E5;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table td {
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    text-align: left;
+    color: #212121;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #1E88E5;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  

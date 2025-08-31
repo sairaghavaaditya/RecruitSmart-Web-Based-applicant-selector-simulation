@@ -1,0 +1,97 @@
+/* ResumeUploadPage.module.css */
+
+.resumeUploadPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: lightblue;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.resumeUploadPage h2 {
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+.resumeUploadPage form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumeUploadPage input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #457b9d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.resumeUploadPage button {
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.resumeUploadPage button:hover {
+    background-color: #1d3557;
+}
+
+.resumeUploadPage .uploadMessage {
+    margin-top: 15px;
+    color: #457b9d;
+    font-weight: bold;
+}
+
+.resumeUploadPage .interviewPreparation {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.resumeUploadPage .resumeDetails {
+    margin-bottom: 20px;
+}
+
+.resumeUploadPage .resumeDetails h3 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.resumeUploadPage .resumeDetails ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resumeUploadPage .interviewQuestions {
+    margin-top: 20px;
+}
+
+.resumeUploadPage .interviewQuestions h2 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.resumeUploadPage .interviewQuestions ol {
+    padding-left: 20px;
+}

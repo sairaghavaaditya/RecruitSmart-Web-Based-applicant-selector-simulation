@@ -1,0 +1,175 @@
+/* src/components/FeedbackPage/FeedbackPage.module.css */
+.feedbackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #46b8ed 0%, #2575fc 100%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.feedbackWrapper {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.iconContainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.congratsIcon {
+    font-size: 80px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.headingText {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.subheadingText {
+    color: #34495e;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.ratingSection {
+    margin-bottom: 30px;
+}
+
+.ratingTitle {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.starContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.starButton {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.starButton:hover,
+.starButton.active {
+    transform: scale(1.2);
+}
+
+.starFilled {
+    color: #f1c40f;
+}
+
+.ratingText {
+    margin-top: 10px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.feedbackTextSection {
+    margin-bottom: 30px;
+}
+
+.feedbackTextSection h3 {
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feedbackTextarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.feedbackTextarea:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.submitButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+.submitButton:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .feedbackWrapper {
+        width: 95%;
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .congratsIcon {
+        font-size: 60px;
+    }
+
+    .headingText {
+        font-size: 20px;
+    }
+
+    .starButton {
+        font-size: 30px;
+    }
+}

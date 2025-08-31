@@ -1,0 +1,124 @@
+    /* General layout */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light Grey */
+    font-family: Arial, sans-serif;
+    color: #212121; /* Dark Grey */
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed; /* Make the sidebar fixed */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height of the viewport */
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #1e88e5; /* Blue */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+}
+
+.sidebar h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* Ensure text remains white */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}
+
+
+.divider {
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 80%;
+    margin: 20px 0;
+}
+
+/* Navigation list */
+.navList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navItem {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.navItem:hover {
+    background-color: #1565c0; /* Darker Blue */
+    color: white;
+}
+
+.active {
+    background-color: #1565c0; /* Highlight active item */
+    color: white;
+}
+
+/* Main content styles */
+.mainContent {
+    margin-left: 280px; /* Leave space for the fixed sidebar */
+    padding: 30px;
+    background-color: #ffffff; /* White background */
+    border-left: 2px solid #e0e0e0; /* Light grey border */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+    overflow-y: auto; /* Allow scrolling for the main content */
+    flex-grow: 1;
+}
+
+/* Text styles */
+.mainContent p {
+    color: #757575; /* Muted Grey for secondary text */
+}
+
+/* Buttons */
+.buttonPrimary {
+    background-color: #ff9800; /* Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buttonPrimary:hover {
+    background-color: #e65100; /* Darker Orange */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative; /* Reset fixed position on smaller screens */
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        height: auto; /* Reset height */
+    }
+
+    .mainContent {
+        margin-left: 0; /* No sidebar offset */
+        padding: 20px;
+    }
+}

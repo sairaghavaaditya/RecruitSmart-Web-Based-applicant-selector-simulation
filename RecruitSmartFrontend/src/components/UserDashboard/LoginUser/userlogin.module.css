@@ -1,0 +1,138 @@
+/* styles.module.css */
+:root {
+    --primary-color: #161a1f;
+    --secondary-color: #3b6a8a;
+    --accent-color: #92c3c6;
+    --light-color: #f1faee;
+    --hover-color: #3b6a8a;
+    --background-gradient: linear-gradient(135deg, #ffafbd, #ffc3a0);
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-gradient);
+}
+
+.rightContainer {
+    width: 80%;
+    max-width: 450px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    width: 95%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 5px auto;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.input:focus,
+.input:hover {
+    outline: none;
+    box-shadow: 0 0 8px var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #377197;
+}
+
+.forgotPw {
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgotPw:hover {
+    color: var(--hover-color);
+}
+
+.registerLink {
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.registerLink:hover {
+    color: var(--hover-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 10px;
+    }
+
+    .rightContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rightContainer {
+        width: 95%;
+    }
+}

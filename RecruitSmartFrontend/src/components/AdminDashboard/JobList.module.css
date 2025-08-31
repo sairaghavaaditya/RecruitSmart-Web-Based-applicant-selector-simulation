@@ -1,0 +1,84 @@
+/* Container styling */
+.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Header section */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    color: #1e88e5;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .message {
+    color: #ff9800;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Job list container */
+  .jobList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  /* Job card styling */
+  .jobCard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobDetails h2 {
+    color: #212121;
+    margin: 0 0 8px;
+  }
+  
+  .jobDetails p {
+    color: #757575;
+    font-size: 14px;
+    margin: 0 0 12px;
+  }
+  
+  .date {
+    color: #757575;
+    font-size: 12px;
+  }
+  
+  /* Delete button styling */
+  .deleteButton {
+    align-self: flex-end;
+    background-color: #ff9800;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: #e68900;
+  }
+  
+  /* No jobs message */
+  .noJobs {
+    color: #757575;
+    text-align: center;
+    font-size: 16px;
+  }
+  

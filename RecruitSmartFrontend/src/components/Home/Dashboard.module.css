@@ -1,0 +1,284 @@
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #a8dadc;
+    --light-color: #f1faee;
+    --hover-color: #106ea4; 
+    --background-gradient: linear-gradient(135deg, #f6f8fa, #e9ecef);
+  }
+
+/* Page Styling */
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden; /* Remove scrolling */
+}
+
+/* Left Container */
+.leftContainer {
+    width: 50%; /* Adjusted width */
+    /* background-color: var(--primary-color); */
+    background-image: url('/public/loginpageImg.jpg'); /* Sample path */
+    background-size:contain; /* Ensures the image covers the container */
+    
+    background-position: center; /* Centers the image */
+    /* color: var(--light-color); */
+    color: #f1faee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Needed for the overlay effect */
+    transition: transform 0.3s ease;
+    
+}
+
+.leftContainer:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.Dashboardbutton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFFFFF; /* White text */
+    background-color: #377197; /* Sky Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.Dashboardbutton:hover {
+    background-color: #161a1f; /* Navy Blue */
+    transform: scale(1.05);
+}
+
+.leftContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Mask overlay effect */
+    /* opacity: 0; */
+    z-index: 0;
+    transition: opacity 0.3s ease;
+}
+
+.leftContainer:hover::after {
+    /* opacity: 1; Overlay appears on hover */
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay on hover */
+}
+
+.leftContainer h2,
+.leftContainer p {
+    z-index: 1; /* Ensures text is above the overlay */
+    color: var(--light-color);/* Bright yellow color for the text */
+}
+
+.leftContainer h2 {
+    font-size: 28px;
+    margin-bottom: -5px;
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+.leftContainer p {
+    padding-top: -80px;
+    padding-bottom: 80px;
+    font-size: 18px;
+    /* z-index: 1; */
+}
+
+/* Right Container */
+.rightContainer {
+    width: 52%; /* Adjusted width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #a1d6e2, #f1f1f2); /* Gradient */
+    padding: 20px;
+    transition: width 0.3s ease;
+} 
+
+
+/* Child Container (Login Form) */
+.child {
+    width: 80%; /* Fills 80% of the right container */
+    max-width: 420px; /* Restricts max width for large screens */
+    /* background-color: var(--light-color); */
+    background-color: transparent; /* Remove background color */
+    /* border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    /* animation: fadeIn 0.5s ease-in-out; */
+}
+
+
+.child h3{
+    padding: 10px;
+    margin:-50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboardButton {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 16px; /* Adjust as necessary */
+    cursor: pointer; /* Change cursor on hover */
+    border: none; /* Remove default button styling */
+    border-radius: 5px; /* Rounded corners */
+    background-color: var(--primary-color); /* Use your primary color */
+    color: var(--light-color); /* Light text color */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.dashboardButton:hover {
+    background-color: var(--hover-color); /* Change background on hover */
+}
+
+.imageButton {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 900px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: transform 0.3s; /* Transition for scaling effect */
+}
+
+.imageButton img {
+    width: 100%; /* Make image fill the button */
+    height: 100%; /* Make image fill the button */
+    object-fit: cover; /* Maintain aspect ratio */
+    opacity: 0.5; /* Start with a shade */
+    transition: opacity 0.3s; /* Transition for opacity change */
+    object-position: center;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the container */
+}
+
+.imageButton:hover img {
+    opacity: 1; /* Show full image on hover */
+    transform: scale(1.05); /* Optional: slight zoom effect on hover */
+}
+
+/* Optional: Add a hover effect for the container */
+.imageButton:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Additional Styles */
+.imageButtonContainer {
+    display: flex; /* Aligns the buttons horizontally */
+    justify-content: center; /* Center the buttons */
+    padding: 50px 0; /* Add some vertical padding */
+}
+
+.imageButton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px 0px 5px ; /* Spacing between buttons */
+    width: 70vw; /* Set the width for the button */
+    height:20vh; /* Set the height for the button */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 5px; /* Optional: for rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s; /* Transition for scaling effect */
+    border: 2px solid var(--primary-color); /* Add border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+    filter: grayscale(100%);
+}
+
+.imgname {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px;
+}
+/* Admin Button */
+.adminButton {
+    background-image: url('/public/adminimg.jpg'); 
+    background-size:contain; 
+    
+    background-position: center; 
+}
+
+.adminButton:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+/* User Button */
+.userButton {
+    background-image: url('/public/user.jpg');
+    background-size:contain; 
+    background-position: center; 
+    
+}
+
+.userButton:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+.imageButton h3 {
+    text-align: center; /* Center-align the text */
+    margin-top: 100px; /* Spacing above the text */
+    color: red; /* Ensure the text color is legible */
+}
+
+
+
+
+/* Responsiveness */
+
+/* General Media Query for Smaller Screens */
+@media screen and (max-width: 780px) {
+    .leftContainer {
+        display: none; /* Hides the left container */
+    }
+
+    .rightContainer {
+        width: 100%; /* Ensures the right container takes the full width */
+        width: 100%; /* Occupy the full width */
+        height: 100vh; /* Occupy the full height */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child {
+        width: 85%; /* Occupies 85% of the screen width */
+        max-width: none; /* Removes the max-width restriction */
+        padding: 0 10px; /* Adjust padding for better alignment */
+    }
+}
+
+/* For Very Small Screens */
+@media screen and (max-width: 480px) {
+    .child {
+        width: 90%; /* Slightly increase width for very small screens */
+    }
+
+    .input {
+        margin-right: 5px; /* Reduce margin for smaller screens */
+    }
+}

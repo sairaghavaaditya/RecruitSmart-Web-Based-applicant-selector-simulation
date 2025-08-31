@@ -1,0 +1,181 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.sidebar {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  width: 20%;
+  min-width: 200px;
+  border-right: 2px solid #ccc; /* More prominent border */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sidebar shadow */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sidebar li:hover {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f7f7f7;
+}
+
+.jobForm, .userForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.jobForm:hover, .userForm:hover {
+  transform: translateY(-5px); /* Slight hover lift effect */
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+.formGroup input, .formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #333;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Focus effect */
+}
+
+.submitButton {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+}
+
+.submitButton:hover {
+  background-color: #3e8e41;
+  transform: translateY(-3px); /* Button hover lift */
+}
+
+.jobList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.jobCard {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: calc(33.333% - 20px);
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.jobCard:hover {
+  transform: translateY(-5px); /* Card hover lift */
+}
+
+.jobCard h4 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.jobCard p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.deleteButton {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+}
+
+.deleteButton:hover {
+  background-color: #e08f14;
+  transform: translateY(-3px); /* Button hover lift */
+}
+
+.message {
+  color: green;
+  margin: 10px 0;
+  font-size: 1em;
+  padding: 10px;
+  background-color: #e8f5e9; /* Light green background */
+  border: 1px solid #c8e6c9;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 80%;
+  margin: 20px 0;
+}
+.sidebar h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff; /* Ensure text remains white */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}

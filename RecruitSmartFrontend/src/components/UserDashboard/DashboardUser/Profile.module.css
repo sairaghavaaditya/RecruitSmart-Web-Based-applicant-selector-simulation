@@ -1,0 +1,44 @@
+.profile {
+    padding: 20px;
+    color: #2b3a67; /* Theme primary */
+  }
+  
+  .profile h1 {
+    font-size: 24px;
+    color: #1a2c53; /* Theme dark */
+  }
+  
+  .profileForm {
+    max-width: 400px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #2b3a67; /* Theme button */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #394b82; /* Hover button */
+  }
+  
