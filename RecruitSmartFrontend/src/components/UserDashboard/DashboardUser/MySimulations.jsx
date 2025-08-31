@@ -41,7 +41,7 @@ const MySimulations = () => {
 
         if (currentTime < interviewStartTime) {
             return "upcoming"; // Interview is in the future
-        } else if (timeDifference > 10 * 60 * 1000) {
+        } else if (timeDifference > 10000000 * 60 * 1000) {
             return "expired"; // More than 10 minutes past the scheduled time
         } else {
             return "available"; // Interview is available
